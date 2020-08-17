@@ -20,6 +20,26 @@ header {
     padding: 10px;
 }
 
+article h1 {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    color: var(--color-title-in-primary);
+    font-weight: 300;
+    font-size: 17px;
+}
+
+section {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 13.5px;
+}
+
+section div {
+    padding-top: 8px;
+}
+
 .label1 {
     justify-content: center;
     position: relative;
@@ -28,6 +48,9 @@ header {
     align-items: center;
 }
 
+.img-size {
+    width: 100%;
+}
 .input1 {
     position: relative;
     display: inline-flexbox;
@@ -58,20 +81,31 @@ header {
     margin-top: 12px;
 }
 
-@media(max-width:1100px) {
-     :root {
-        font-size: 40%;
+@media(min-width:425px) {
+    article h1 {
+        padding-top: 15px;
+        font-size: 19px;
     }
 }
 
-@media(min-width:1100px) {
+@media(min-width:540px) {
+    section div {
+        display: flex;
+    }
+
+    .div-text {
+        width: 70%;
+    }
+}
+
+@media(min-width:768px) {
     article h1 {
         padding-right: 40px;
         padding-left: 40px;
         padding-top: 20px;
         color: var(--color-title-in-primary);
         font-weight: 300;
-        font-size: 28px;
+        font-size: 20px;
     }
 
     section {
@@ -81,9 +115,8 @@ header {
         font-size: 18px;
     }
 
-    section div {
-        display: flex;
-        padding-top: 10px;
+    .div-text {
+        width: initial;
     }
 
     .div-text p{
@@ -93,5 +126,25 @@ header {
     .form {
         display: inline;
         align-content: center;
+    }
+    section div {
+        display: block;
+    }
+}
+
+@media(min-width:992px) {
+    section div {
+        display: flex;
+    }
+
+    .div-text {
+        width: 55%;
+    }
+}
+
+@media(min-width:1100px) {
+    article h1 {
+        font-size: 23px;
+        padding-top: 22px;
     }
 }
