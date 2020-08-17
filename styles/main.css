@@ -11,7 +11,7 @@
     --color-text-in-primary: #D4C2FF;
     --color-text-title: #32264D;
     --color-text-complement: #9C98A6;
-    --color-text-base: #6A6180;
+    --color-text-base: #3d3d3d;
     --color-line-in-white: #E6E6F0;
     --color-input-background: #F8F8FC;
     --color-button-text: #FFFFFF;
@@ -42,41 +42,79 @@ html, body {
 }
 
 body {
-        display: grid;
-        grid-template-areas:"header header"
-                            "article aside"
-                            "section aside";
-        grid-template-columns: 70% 30%;
-        grid-template-rows: 12% 55% 55%;
-        margin: 0%
+    display: grid;
+    grid-template-areas:"header"
+                        "article"
+                        "aside"
+                        "section";
+    grid-template-columns: 100%;
+    grid-template-rows: 12% 30% 60% 60%;
+    margin: 0%
 }
- 
+
+body::-webkit-scrollbar{
+    width: 0%;
+    background: transparent;
+}
+
 body, input, textarea {
-    font: 500 1.6rem Poppins;
-    color: var( --color-text-base);
+font-family: 'Roboto', sans-serif;
+color: var( --color-text-base);
 }
 
 article {
-    background-color: #6495ED;
-    grid-area: article;
+background-color: #6495ED;
+grid-area: article;
 }
 
 aside{
-    background-color: #2C2A85;
-    grid-area: aside;
+background-color: #2C2A85;
+grid-area: aside;
 }
 
 header {
-    background-color: #ffffff;
-    grid-area: header;
+background-color: #ffffff;
+grid-area: header;
 }
 
 section {
-    background-color: #ffffff;
-    grid-area: section;
+background-color: #ffffff;
+grid-area: section;
 }
 
-/* #container {
-    width: 90vw;
-    max-width: 700px;
-} */
+
+@media (min-width: 992px) {
+    body {
+            display: grid;
+            grid-template-areas:"header header"
+                                "article aside"
+                                "section aside";
+            grid-template-columns: 65% 35%;
+            grid-template-rows: 12% 20% 82%;
+            margin: 0%
+    }
+
+    body, input, textarea {
+        color: var( --color-text-base);
+    }
+
+    article {
+        background-color: #6495ED;
+        grid-area: article;
+    }
+
+    aside{
+        background-color: #2C2A85;
+        grid-area: aside;
+    }
+
+    header {
+        background-color: #ffffff;
+        grid-area: header;
+    }
+
+    section {
+        background-color: #ffffff;
+        grid-area: section;
+    }
+}
