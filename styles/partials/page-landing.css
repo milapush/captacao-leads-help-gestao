@@ -51,6 +51,7 @@ section div {
 .img-size {
     width: 100%;
 }
+
 .input1 {
     position: relative;
     display: inline-flexbox;
@@ -92,7 +93,6 @@ section div {
     section div {
         display: flex;
     }
-
     .div-text {
         width: 70%;
     }
@@ -107,22 +107,18 @@ section div {
         font-weight: 300;
         font-size: 20px;
     }
-
     section {
         padding-right: 30px;
         padding-left: 40px;
         padding-top: 20px;
         font-size: 18px;
     }
-
     .div-text {
         width: initial;
     }
-
-    .div-text p{
+    .div-text p {
         padding-top: 25px;
     }
-
     .form {
         display: inline;
         align-content: center;
@@ -136,7 +132,6 @@ section div {
     section div {
         display: flex;
     }
-
     .div-text {
         width: 55%;
     }
@@ -147,4 +142,41 @@ section div {
         font-size: 23px;
         padding-top: 22px;
     }
+}
+
+-------------------------------------- body {
+    background-color: #2C2A85;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 200;
+    display: flex;
+    margin: 0%;
+}
+
+.form {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 4.6rem;
+    margin-top: 0.8rem;
+}
+
+.input1 {
+    height: 2.5rem;
+    width: 20rem;
+}
+
+.input2 {
+    height: 2.5rem;
+    width: 20rem;
+}
+
+.rodape input[type=submit] {
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: pink;
+    color: white;
+    height: 30px;
+    width: 46px;
 }
