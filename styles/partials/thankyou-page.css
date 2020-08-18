@@ -15,7 +15,8 @@ body {
 }
 
 .container div:nth-child(1){
-    width: 45%;
+    width: 60%;
+    padding-top: 10px;
     text-align: left;
 }
 .container div:nth-child(2){
@@ -40,7 +41,7 @@ a {
 
 header {
     background-color: #2C2A85;
-    padding-right: 50px;
+    padding-right: 80px;
     padding-left: 50px;
     padding-top: 40px;
     padding-bottom: 40px;
