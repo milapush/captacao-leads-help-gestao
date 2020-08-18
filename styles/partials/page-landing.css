@@ -32,7 +32,7 @@ input {
     margin-top: 17px;
     background-color: #C4C4C4;
     font: 700 15px 'Roboto';
-    color: #252525;
+    color: #2C2A85;
     padding: 8px 8px;
     border-style: none;
     border-radius: 2px;
@@ -48,6 +48,10 @@ input[type=submit] {
     justify-content: center;
     padding-top: 12px;
     padding-bottom: 12px;
+}
+::-webkit-input-placeholder {
+    font-weight: normal;
+    color: #6765c5;
 }
 
 input[type=radio] {
