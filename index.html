@@ -63,19 +63,19 @@
                 <form class="form" method="POST" action="https://smtl.gama.academy/leads/7f2b4811-dcac-11ea-91f1-99fb0c9231dc">
                     <div>
                         <label name="name">Nome Completo:</label>
-                        <input name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo" required />
+                        <input placeholder="Nome Completo" name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo" required />
                     </div>
                     <div>
                         <label name="email">Email:</label>
-                        <input name="email" type="email" title="Digite um email válido" required />
+                        <input placeholder="E-mail" name="email" type="email" title="Digite um email válido" required />
                     </div>
                     <div>
                         <div>
-                            <input type="radio" id="empreendedor" name="perfil" value="empreendedor">
+                            <input type="radio" id="empreendedor" name="perfil" value="empreendedor" required>
                             <label for="empreendedor">Sou Empreendedor (a)</label>
                         </div>
                         <div>
-                            <input type="radio" id="Contador" name="perfil" value="Contador">
+                            <input type="radio" id="Contador" name="perfil" value="Contador" required>
                             <label for="Contador">Sou Contador(a)</label>
                         </div>
                     </div>
