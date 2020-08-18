@@ -1,3 +1,13 @@
+article h1 {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 17px;
+}
+
 #formulario {
     margin: 18px;
     padding: 20px;
@@ -15,6 +25,17 @@
     padding-top: 25px;
 }
 
+fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    border-style: none;
+}
+
 div form :nth-child(3) {
     padding-top: 10px !important;
 }
@@ -23,14 +44,30 @@ div form :nth-child(3) div {
     display: flex !important;
 }
 
-label {
-    font-size: 16px;
-    color: var(--color-title-in-primary);
+h2 {
+    font-size: 20px;
+    color: #FFFFFF;
+    
+}
+
+h3 {
+    padding-top: 20px;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 input {
     margin-top: 17px;
-    background-color: #C4C4C4;
+    background-color: #f0f0f0;
     font: 700 15px 'Roboto';
     color: #2C2A85;
     padding: 8px 8px;
@@ -49,10 +86,6 @@ input[type=submit] {
     padding-top: 12px;
     padding-bottom: 12px;
 }
-::-webkit-input-placeholder {
-    font-weight: normal;
-    color: #6765c5;
-}
 
 input[type=radio] {
     margin-top: 2px;
@@ -61,51 +94,18 @@ input[type=radio] {
     height: 18px;
 }
 
-.quebra-linha{
-    display: none;
-}
-
-fieldset {
-    display: block;
-    margin-inline-start: 2px;
-    margin-inline-end: 2px;
-    padding-block-start: 0.35em;
-    padding-inline-start: 0.75em;
-    padding-inline-end: 0.75em;
-    padding-block-end: 0.625em;
-    border-style: none;
-
-}
-
-h2 {
-    font-size: 20px;
-    color: var(--color-title-in-primary);
-    
-}
-
-h3 {
-    padding-top: 20px;
-    font-size: 18px;
-    color: var(--color-title-in-primary);
+::-webkit-input-placeholder {
     font-weight: normal;
+    color: #6765c5;
 }
 
-header {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.img-size {
+    width: 100%;
 }
 
-article h1 {
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    color: var(--color-title-in-primary);
-    font-weight: normal;
-    font-size: 17px;
+label {
+    font-size: 16px;
+    color: #FFFFFF;
 }
 
 section {
@@ -119,16 +119,8 @@ section div {
     padding-top: 8px;
 }
 
-.label1 {
-    justify-content: center;
-    position: relative;
-    display: inline-flexbox;
-    margin-top: 400px;
-    align-items: center;
-}
-
-.img-size {
-    width: 100%;
+.quebra-linha{
+    display: none;
 }
 
 @media(min-width:425px) {
@@ -156,7 +148,7 @@ section div {
         padding-right: 40px;
         padding-left: 40px;
         padding-top: 20px;
-        color: var(--color-title-in-primary);
+        color: #FFFFFF;
         font-weight: 300;
         font-size: 20px;
     }
