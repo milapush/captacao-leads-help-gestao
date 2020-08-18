@@ -72,23 +72,58 @@ section {
     display: grid;
 }
 
+.redes div:nth-child(0) {
+    width: 60%;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.redes div:nth-child(1) {
+    width: 30%;
+    text-align: center;
+}
+
 .redes h3 {
-    padding: 20px;
+    /*padding: 40px;*/
     font: 300 25px 'Roboto';
     color: #4169E1;
+    display: flex;
+    text-align: center;
+    /*margin-left: 70px;*/
 }
 
 #face {
     width: 100px;
-    margin-left: 80px;
+    float: left;
+}
+
+
+/*.redes h3 {
+    padding: 40px;
+    font: 300 25px 'Roboto';
+    color: #4169E1;
+    display: flex;
+    margin-left: 70px;
+}
+
+#face {
+    width: 100px;
+    margin-left: 200px;
     margin-right: 50px;
+    margin-top: -20px;
+}*/
+
+.redes h6 {
+    font: 300 10px 'Roboto';
+    color: #6D6C6C;
+    text-decoration: underline;
+    padding: 10px;
+    margin-left: 500px;
+    margin-top: 100px;
 }
 
-#insta {
-    width: 94px;
-}
 
-.cancelar {
+/*.cancelar {
     margin-top: 10px !important;
     margin-left: 60px;
     font-size: 20px;
@@ -100,4 +135,4 @@ section {
     padding-top: 12px;
     padding-bottom: 12px;
     width: 400px;
-}
+}*/
