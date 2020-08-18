@@ -22,6 +22,16 @@
     /*controle das medidas rem*/
 }
 
+.classe  {
+    background-image: url(IMAGEM-PEQUENA.PNG);
+}
+
+@media (min-width: 1200px) {
+    .classe {
+        background-image: url(IMAGEM-GRANDE.PNG);
+    }
+}
+
  *{
     margin: 0;
     padding: 0;
