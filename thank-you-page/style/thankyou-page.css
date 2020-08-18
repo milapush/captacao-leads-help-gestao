@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,12 +14,13 @@ body {
     justify-content: space-between;
 }
 
-.container div:nth-child(1){
+.container div:nth-child(1) {
     width: 60%;
     padding-top: 10px;
     text-align: left;
 }
-.container div:nth-child(2){
+
+.container div:nth-child(2) {
     width: 30%;
     text-align: center;
 }
@@ -59,4 +60,44 @@ h3 {
 
 section {
     background-color: #2C2A85;
+}
+
+.carteira {
+    display: flex;
+}
+
+.carteira img {
+    width: 550px;
+    margin-left: 50px;
+    display: grid;
+}
+
+.redes h3 {
+    padding: 20px;
+    font: 300 25px 'Roboto';
+    color: #4169E1;
+}
+
+#face {
+    width: 100px;
+    margin-left: 80px;
+    margin-right: 50px;
+}
+
+#insta {
+    width: 94px;
+}
+
+.cancelar {
+    margin-top: 10px !important;
+    margin-left: 60px;
+    font-size: 20px;
+    border-radius: 25px;
+    border: 1px solid whitesmoke;
+    color: white;
+    background-color: #A244C3;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 400px;
 }
