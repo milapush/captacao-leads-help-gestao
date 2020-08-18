@@ -48,7 +48,7 @@ body {
                         "section"
                         "aside";
     grid-template-columns: 100%;
-    grid-template-rows: 12% 25% 100% 60%;
+    grid-template-rows: 12% 25% 100% 100%;
     margin: 0%
 }
 
@@ -68,8 +68,8 @@ grid-area: article;
 }
 
 aside{
-background-color: #2C2A85;
-grid-area: aside;
+    background-color: #ffffff;
+    grid-area: aside;
 }
 
 header {
@@ -84,13 +84,13 @@ grid-area: section;
 
 @media(min-width:400px) { 
     body {
-        grid-template-rows: 12% 20% 100% 60%;
+        grid-template-rows: 12% 23% 100% 100%;
     }
 }
 
 @media(min-width:540px) { 
     body {
-        grid-template-rows: 12% 20% 70% 60%;
+        grid-template-rows: 12% 20% 68% 90%;
     }
 }
 

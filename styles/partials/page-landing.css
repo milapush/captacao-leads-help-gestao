@@ -1,6 +1,9 @@
 #formulario {
-    padding: 35px;
+    margin: 18px;
+    padding: 20px;
     justify-content: center;
+    background-color: #2c2a85;
+    border-radius: 20px;
 }
 
 #formulario h2, h3 {
@@ -13,8 +16,6 @@
 }
 
 div form :nth-child(3) {
-    display: flex !important;
-    justify-content: space-between;
     padding-top: 10px !important;
 }
 
@@ -38,6 +39,7 @@ input {
 }
 
 input[type=submit] {
+    margin-top: 10px !important;
     font-size: 20px;
     border-radius: 25px;
     border: 1px solid whitesmoke;
@@ -132,6 +134,11 @@ section div {
     .div-text {
         width: 70%;
     }
+    div form :nth-child(3) {
+        display: flex !important;
+        justify-content: space-around;
+        padding-top: 5px !important;
+    }
 }
 
 @media(min-width:768px) {
@@ -155,19 +162,18 @@ section div {
     .div-text p {
         padding-top: 25px;
     }
-
-    #formulario {
-        padding: 35px;
-        padding-top: 100px;
-        justify-content: center;
-    }
-
     .form {
         display: inline;
         align-content: center;
     }
+    div form :nth-child(3) {
+        display: block !important;
+    }
     section div {
         display: block;
+    }
+    #formulario {
+        margin: 0;
     }
 }
 
@@ -183,6 +189,10 @@ section div {
     }
     .div-text {
         width: 55%;
+    }
+    #formulario {
+        padding: 35px;
+        justify-content: center;
     }
 }
 
