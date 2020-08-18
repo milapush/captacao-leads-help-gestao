@@ -1,9 +1,83 @@
-#page-landing {
-    background: var(--color-background);
+#formulario {
+    padding: 35px;
+    justify-content: center;
 }
 
-#page-landing #container {
-    color: var(--color-text-in-primary);
+#formulario h2, h3 {
+    text-align: center;
+}
+
+#formulario div {
+    display: grid;
+    padding-top: 25px;
+}
+
+div form :nth-child(3) {
+    display: flex !important;
+    justify-content: space-between;
+    padding-top: 10px !important;
+}
+
+div form :nth-child(3) div {
+    display: flex !important;
+}
+
+label {
+    font-size: 16px;
+    color: var(--color-title-in-primary);
+}
+
+input {
+    margin-top: 17px;
+    background-color: #C4C4C4;
+    font: 700 15px 'Roboto';
+    color: #252525;
+    padding: 8px 8px;
+    border-style: none;
+    border-radius: 2px;
+}
+
+input[type=submit] {
+    font-size: 20px;
+    border-radius: 25px;
+    border: 1px solid whitesmoke;
+    color: white;
+    background-color: #A244C3;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+input[type=radio] {
+    margin-top: 2px;
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    border-style: none;
+
+}
+
+h2 {
+    font-size: 20px;
+    color: var(--color-title-in-primary);
+    
+}
+
+h3 {
+    padding-top: 20px;
+    font-size: 18px;
+    color: var(--color-title-in-primary);
+    font-weight: normal;
 }
 
 header {
@@ -12,20 +86,12 @@ header {
     justify-content: center;
 }
 
-.conjunto {
-    border-color: var(--color-text-in-primary);
-    height: 190px;
-    width: 410px;
-    align-content: center;
-    padding: 10px;
-}
-
 article h1 {
     padding-right: 15px;
     padding-left: 15px;
     padding-top: 15px;
     color: var(--color-title-in-primary);
-    font-weight: 300;
+    font-weight: normal;
     font-size: 17px;
 }
 
@@ -50,36 +116,6 @@ section div {
 
 .img-size {
     width: 100%;
-}
-
-.input1 {
-    position: relative;
-    display: inline-flexbox;
-    margin: 10px 0px 0px 120px;
-    font-size: 12px;
-    align-content: center;
-    padding: 2px;
-}
-
-.input2 {
-    margin: 10px 0px 0px 73px;
-    font-size: 12px;
-    align-content: center;
-    padding: 2px;
-}
-
-.label1,
-.label2 {
-    font-size: 16px;
-    margin: 0px 0px 20px 0px;
-}
-
-.submit {
-    margin: auto;
-    position: relative;
-    padding: 0px;
-    margin-left: 250px;
-    margin-top: 12px;
 }
 
 @media(min-width:425px) {
@@ -119,6 +155,13 @@ section div {
     .div-text p {
         padding-top: 25px;
     }
+
+    #formulario {
+        padding: 35px;
+        padding-top: 100px;
+        justify-content: center;
+    }
+
     .form {
         display: inline;
         align-content: center;
@@ -129,6 +172,12 @@ section div {
 }
 
 @media(min-width:992px) {
+    h2 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 19px;
+    }
     section div {
         display: flex;
     }
@@ -142,41 +191,4 @@ section div {
         font-size: 23px;
         padding-top: 22px;
     }
-}
-
--------------------------------------- body {
-    background-color: #2C2A85;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-weight: 200;
-    display: flex;
-    margin: 0%;
-}
-
-.form {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-weight: 500;
-    font-size: 1.3rem;
-    line-height: 4.6rem;
-    margin-top: 0.8rem;
-}
-
-.input1 {
-    height: 2.5rem;
-    width: 20rem;
-}
-
-.input2 {
-    height: 2.5rem;
-    width: 20rem;
-}
-
-.rodape input[type=submit] {
-    border-radius: 5px;
-    border: 1px solid #333;
-    background-color: pink;
-    color: white;
-    height: 30px;
-    width: 46px;
 }
