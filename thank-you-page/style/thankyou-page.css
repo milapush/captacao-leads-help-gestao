@@ -8,25 +8,13 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.container {
+.div-btn {
     display: flex;
-    margin-top: 30px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.container div:nth-child(1) {
-    width: 60%;
-    padding-top: 10px;
-    text-align: left;
-}
-
-.container div:nth-child(2) {
-    width: 30%;
-    text-align: center;
-}
-
-a {
-    width: 20%;
+.btn-ebook {
+    width: 50%;
     margin-top: 10px;
     font-size: 25px;
     border-radius: 25px;
@@ -42,34 +30,36 @@ a {
 
 header {
     background-color: #2C2A85;
-    padding-right: 80px;
-    padding-left: 50px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 25px;
+    padding-bottom: 80px;
     text-align: center;
     color: #fff
 }
 
+section {
+    display: block;
+    text-align: center;
+}
+
 h1 {
-    font-size: 25px;
+    font-size: 19px;
+    padding-bottom: 10px;
 }
 
 h3 {
     font-weight: normal;
-}
-
-section {
-    background-color: #2C2A85;
+    font-size: 1rem;
+    padding-bottom: 10px;
 }
 
 .carteira {
-    display: flex;
+    display: block;
 }
 
 .carteira img {
-    width: 550px;
-    margin-left: 50px;
-    display: grid;
+    width: 300px;
 }
 
 .redes div:nth-child(0) {
@@ -84,53 +74,113 @@ section {
 }
 
 .redes h3 {
-    padding: 40px;
-    font: 300 25px 'Roboto';
+    font: 300 19px 'Roboto';
     color: #4169E1;
-    display: flex;
     text-align: center;
-    margin-left: 70px;
 }
 
 #face {
-    width: 100px;
-    margin-left: 189px;
+    width: 80px;
 }
 
-/*.redes h3 {
-    padding: 40px;
-    font: 300 25px 'Roboto';
-    color: #4169E1;
+.topo {
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
-    margin-left: 70px;
-}
-
-#face {
-    width: 100px;
-    margin-left: 200px;
-    margin-right: 50px;
-    margin-top: -20px;
-}*/
-
-.redes h6 {
-    font: 300 10px 'Roboto';
-    color: #6D6C6C;
-    text-decoration: underline;
-    padding: 10px;
-    margin-left: 500px;
-    margin-top: 80px;
-}
-
-/*.cancelar {
-    margin-top: 10px !important;
-    margin-left: 60px;
-    font-size: 20px;
-    border-radius: 25px;
-    border: 1px solid whitesmoke;
-    color: white;
-    background-color: #A244C3;
+    align-items: center;
     justify-content: center;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    width: 400px;
-}*/
+}
+
+.quebra-linha{
+    display: none;
+}
+
+@media (min-width:540px) {
+    section {
+        display: flex;
+        align-items: center;
+    }
+
+    .redes {
+        width: 50%;
+    }
+}
+
+@media (min-width:768px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    .carteira img {
+        width: 450px;
+    }
+
+    h3 {
+        font-size: 1.17rem;
+        padding-bottom: 0;
+    }
+
+    .container {
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-between;
+    }
+
+    .container div:nth-child(1) {
+        width: 60%;
+        padding-top: 10px;
+        text-align: left;
+    }
+    
+    .container div:nth-child(2) {
+        width: 30%;
+        text-align: center;
+    }
+    .div-btn {
+        display: block;
+    }
+
+    .btn-ebook {
+        width: 20%;
+    }
+}
+
+@media (min-width:992px) {
+    header {
+        background-color: #2C2A85;
+        padding-right: 80px;
+        padding-left: 50px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: center;
+        color: #fff
+    }
+
+    .redes {
+        width: 70%;
+    }
+
+    .redes h3 {
+        font: 300 23px 'Roboto';
+        color: #4169E1;
+        text-align: center;
+    }
+
+    #face {
+        width: 100px;
+    }
+
+    .carteira img {
+        width: 550px;
+        display: grid;
+    }
+
+    .carteira {
+        display: flex;
+        padding-left: 50px;
+    }
+
+    .quebra-linha{
+        display: block;
+    }
+}
