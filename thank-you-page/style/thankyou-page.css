@@ -120,6 +120,10 @@ h3 {
         padding-bottom: 0;
     }
 
+    header {
+        padding-bottom: 30px;
+    }
+
     .container {
         display: flex;
         margin-top: 30px;
@@ -151,9 +155,6 @@ h3 {
         padding-right: 80px;
         padding-left: 50px;
         padding-top: 40px;
-        padding-bottom: 40px;
-        text-align: center;
-        color: #fff
     }
 
     .redes {
@@ -162,8 +163,6 @@ h3 {
 
     .redes h3 {
         font: 300 23px 'Roboto';
-        color: #4169E1;
-        text-align: center;
     }
 
     #face {
